@@ -1,0 +1,32 @@
+{
+    "baseURL":"http://127.0.0.1:8888/api/v1",
+    "api":{
+        "user":{
+            "create":"/user",
+            "update":"/user/",
+            "delete":"/user/",
+            "getSingle":"/user/",
+            "getAll":"/user",
+            "login":"/user/login"
+        },
+        "hospital":{
+            "create":"/hospital",
+            "update":"/hospital/",
+            "delete":"/hospital/",
+            "getSingle":"/hospital/",
+            "getAll":"/hospital"
+        },
+        "patient":{
+            "create":"/patient",
+            "update":"/patient/",
+            "delete":"/patient/",
+            "getSingle":"/patient/",
+            "getAll":"/patient"
+        },
+        "auth":{
+            "resetLink":"/auth/password-reset-Link",
+            "refreshToken":"/auth/refresh"
+        }
+
+    }
+}
