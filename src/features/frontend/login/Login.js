@@ -15,6 +15,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import UserService from "../../../services/UserService";
 import { addUser } from "../../../slices/userSlice";
 import { useDispatch } from "react-redux";
+import MetaDesc from "../../../ui/meta/MetaDesc";
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -93,6 +94,10 @@ const Login = () => {
 
   return (
     <Grid container component="main" className={classes.root}>
+      <MetaDesc
+        title="Login"
+        metadata={[{ name: "description", content: "Login Page Information" }]}
+      />
       <CssBaseline />
       <Grid item xs={false} sm={4} md={7} className={classes.image} />
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>

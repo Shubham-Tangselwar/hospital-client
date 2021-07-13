@@ -1,5 +1,7 @@
 import { makeStyles } from "@material-ui/core";
 import React from "react";
+import MetaTags from "react-meta-tags";
+import MetaDesc from "../../../ui/meta/MetaDesc";
 
 const Home = () => {
   const useStyle = makeStyles((theme) => ({
@@ -14,7 +16,15 @@ const Home = () => {
   }));
 
   const classes = useStyle();
-  return <div className={classes.baner}></div>;
+  return (
+    <>
+      <MetaDesc
+        title="Home"
+        metadata={[{ name: "description", content: "Home Page Information" }]}
+      />
+      <div className={classes.baner}></div>
+    </>
+  );
 };
 
 export default Home;
